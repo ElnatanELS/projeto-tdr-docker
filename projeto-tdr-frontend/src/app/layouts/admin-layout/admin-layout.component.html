@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <div class="sidebar" data-color="danger" data-background-color="white" data-image="./assets/img/sidebar-1.jpg"
+        *ngIf="isMaps('teste-tdr')">
+        <app-sidebar></app-sidebar>
+        <div class="sidebar-background" style="background-image: url(./assets/img/sidebar-4.jpg)"></div>
+    </div>
+    <div class="main-panel">
+        <div  *ngIf="isMaps('teste-tdr')"> 
+            <app-navbar></app-navbar>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

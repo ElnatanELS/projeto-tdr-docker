@@ -1,0 +1,20 @@
+<div class="main-content">
+  <div class="container-fluid text-center">
+    <img class="displayed" [src]="imagem" *ngIf="imagem" />
+    <audio autoplay *ngIf="audio">
+      <source [src]="audio" />
+    </audio>
+    <div class="container4" *ngIf="nome_cor">
+      <p
+        [ngClass]="{
+          amarelo: amarelo,
+          verde: verde,
+          vermelho: vermelho,
+          azul: azul
+        }"
+      >
+        <b>{{ nome_cor }}</b>
+      </p>
+    </div>
+  </div>
+</div>
